@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="stylesheet" href="layout.css">
+<title>Menu</title>
+</head>
+<body>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="menu.html">Menu</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+ <div class="container-fluid mt-5">
+   <h1>Menu</h1>
+   <div class="row justify-content-center">
+      <div class="col-md-8">
+         <div class="table-responsive">
+            <table id="myTable" class="table">
+               <thead>
+                  <tr>
+                     <th>Item</th>
+                     <th>Quantity</th>
+                     <th>Price</th>
+                     <th class="text-right">
+                        <span id="amount" class="amount">Amount</span>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <a><h5>Lemon Cake</h5> <span class="tooltip">A tender slice of cake soaked in a lemony glaze.</span></a>
+                     </td>
+                     <td>
+                        <div class="button-container">
+                           <button class="cart-qty-plus" type="button" value="+" id="plus" onclick="add1()">+</button>
+                           <p></p><h4 id="qty1">0</h4> <p></p>
+                           <button class="cart-qty-minus" type="button" value="-" id="minus" onclick="sub1()">-</button>
+                        </div>
+                     </td>
+                     <td id="demo">
+                        <input type="text" value="₹40" class="price form-control" disabled>
+                     </td>
+                     <td align="right"><h3> ₹ <span id="amount1" class="amount">0</span></h3>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a><h5>Salted Caramel Brownies</h5><span class="tooltip">A rich brownie swirled through with decadent caramel sauce.</span></a>
+                     </td>
+                     <td>
+                        <div class="button-container">
+                           <button class="cart-qty-plus" type="button" value="+" onclick="add2()">+</button>
+                           <p></p><h4 id="qty2">0</h4> <p></p>
+                           <button class="cart-qty-minus" type="button" value="-" onclick="sub2()">-</button>
+                        </div>
+                     </td>
+                     <td>
+                        <input type="text" value="₹45" class="price form-control" disabled>
+                     </td>
+                     <td align="right"><h3> ₹ <span id="amount2" class="amount">0</span></h3>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a><h5>Peanut Butter Brownies</h5><span class="tooltip">A rich brownie swirled through with creamy peanut butter.</span></a>
+                     </td>
+                     <td>
+                        <div class="button-container">
+                           <button class="cart-qty-plus" type="button" value="+" onclick="add3()">+</button>
+                           <p></p><h4 id="qty3">0</h4> <p></p>
+                           <button class="cart-qty-minus" type="button" value="-" onclick="sub3()">-</button>
+                        </div>
+                     </td>
+                     <td>
+                        <input type="text" value="₹50" class="price form-control" disabled>
+                     </td>
+                     <td align="right"><h3> ₹ <span id="amount3" class="amount">0</span></h3>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a><h5>Snickerdoodles</h5><span class="tooltip"> A soft cookie, spiced with notes of nutmeg and cinnamon. <br> Contains 5 cookies. </span></a>
+                     </td>
+                     <td>
+                        <div class="button-container">
+                           <button class="cart-qty-plus" type="button" value="+" onclick="add4()">+</button>
+                           <p></p><h4 id="qty4">0</h4> <p></p>
+                           <button class="cart-qty-minus" type="button" value="-" onclick="sub4()">-</button>
+                        </div>
+                     </td>
+                     <td>
+                        <input type="text" value="₹35" class="price form-control" disabled>
+                     </td>
+                     <td align="right"><h3> ₹ <span id="amount4" class="amount">0</span></h3>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a><h5>Millionaires' Shortbread</h5><span class="tooltip">A three layered delight of crumbly shortbread, topped with luscious caramel and finished with decadent chocolate.</span></a>
+                     </td>
+                     <td>
+                        <div class="button-container">
+                           <button class="cart-qty-plus" type="button" value="+" onclick="add5()">+</button>
+                           <p></p><h4 id="qty5">0</h4> <p></p>
+                           <button class="cart-qty-minus" type="button" value="-" onclick="sub5()">-</button>
+                        </div>
+                     </td>
+                     <td>
+                        <input type="text" value="₹50" class="price form-control" disabled>
+                     </td>
+                     <td align="right"><h3> ₹ <span id="amount5" class="amount">0</span></h3>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a><h5>Candy collection</h5><span class="tooltip">You will be spoiled for choice with this selection of homemade candy, containing white chocolate fudge, almond nougat, vanilla marshmallows, caramel toffee, and lemon drops.</span></a>
+                     </td>
+                     <td>
+                        <div class="button-container">
+                           <button class="cart-qty-plus" type="button" value="+" onclick="add6()">+</button>
+                           <p></p><h4 id="qty6">0</h4> <p></p>
+                           <button class="cart-qty-minus" type="button" value="-" onclick="sub6()">-</button>
+                        </div>
+                     </td>
+                     <td>
+                        <input type="text" value="₹120" class="price form-control" disabled>
+                     </td>
+                     <td align="right"><h3> ₹ <span id="amount6" class="amount">0</span></h3>
+                     </td>
+                  </tr>
+               </tbody>
+               <tfoot>
+                  <tr>
+                     <td colspan="4"></td>
+                     <td align="left">
+					 <button class="disc" onclick="totalle()">Total</button>
+                        <h3>₹<span id="total">0</span></h3>
+                     </td>
+                  </tr>
+               </tfoot>
+            </table>
+         </div>
+      </div>
+   </div>
+</div> 
+<p> apply discounts after you finish deciding what to order!</p>
+<button class="disc" id="disc1" onclick="dislemoncake()">Discount on Lemon Cake</button>
+<button class="disc" id="disc2" onclick="distotal()">Discount on Large Orders</button>
+<p align="right">
+<a href="pay.html" target="_blank">
+<button class="disc"><b>How to Pay</b></button>
+</a>
+</p>
+<script src="script.js"></script>
+</body>
+</html>
